@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="146ac719-5521-4a4e-b3d1-71579fff320e" name="Default Changelist" comment="" />
+    <list default="true" id="146ac719-5521-4a4e-b3d1-71579fff320e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/textutils/templates/analyze.html" beforeDir="false" afterPath="$PROJECT_DIR$/textutils/templates/analyze.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/textutils/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/textutils/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/textutils/textutils/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/textutils/textutils/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +22,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1ThphXDJTGTAxAInvrhHfLomVcu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Python38-32/DLLs" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -45,11 +56,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573922300744</updated>
-      <workItem from="1573922302099" duration="6689000" />
+      <workItem from="1573922302099" duration="7830000" />
+      <workItem from="1573969616922" duration="7182000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
