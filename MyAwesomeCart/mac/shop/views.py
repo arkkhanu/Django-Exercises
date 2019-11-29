@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Product
+from .models import Product, Contact
 from math import ceil
 
 
@@ -12,12 +12,19 @@ def index(request):
     allProds = []
     catprods = Product.objects.values('category', 'id')
     # print(catprods)
+    # print("\nss\n")
     cats = {item['category'] for item in catprods}
+    print(cats)
+    # i = 0
     for cat in cats:
         prod = Product.objects.filter(category=cat)
         n = len(prod)
         nSlides = n // 4 + ceil((n / 4) - (n // 4))
+        # print(prod, "ssldie", nSlides)
         allProds.append([prod, range(1, nSlides), nSlides])
+        # print(" the value of i ", str(i))
+        # print(allProds)
+        # i += 1
     # allProds = [[products, range(1, nSlides), nSlides],
     #             [products, range(1, nSlides), nSlides]]
     params = {'allProds': allProds}
@@ -29,20 +36,31 @@ def about(request):
 
 
 def contact(request):
-    return HttpResponse("contact")
+    if request.method == "POST":
+        # print("request")
+        name = request.POST.get('name', '')
+        email = request.POST.get('email', '')
+        phone = request.POST.get('phone', '')
+        desc = request.POST.get('desc', '')
+        # print(name, email, phone, desc)
+        contact = Contact(name=name, email=email, phone=phone, desc=desc)
+        contact.save()
+    return render(request, 'shop/contact.html')
 
 
 def tracker(request):
-    return HttpResponse("tracker")
+    return render(request, 'shop/tracker.html')
 
 
 def search(request):
-    return HttpResponse("search")
+    return render(request, 'shop/search.html')
 
 
-def prodView(request):
-    return HttpResponse("prodview")
+def prodView(request, myid):
+    product = Product.objects.filter(id=myid)
+    # print(product.product_name)
+    return render(request, 'shop/prodView.html', {'product': product[0]})
 
 
 def checkout(request):
-    return HttpResponse("checkout")
+    return render(request, 'shop/checkout.html')
